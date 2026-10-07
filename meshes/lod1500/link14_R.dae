@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2026-09-14T00:00:00Z</created>
+    <modified>2026-09-14T00:00:00Z</modified>
+    <unit name="metre" meter="1" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="scout_1a1a1a_effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.05 0.05 0.05 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.1 0.1 0.1 1</color>
+            </diffuse>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="scout_1a1a1a" name="scout_1a1a1a">
+      <instance_effect url="#scout_1a1a1a_effect" />
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geometry" name="link14_R">
+      <mesh>
+        <source id="positions">
+          <float_array id="positions_array" count="54">0.0209736545 0.0133898584 -0.00341124134 0.0169888493 0.0155553399 -0.00980380829 0.01637429 0.0150903529 -0.00124251284 0.00865960214 0.0131003605 -0.0101753753 0.0094113145 0.0134379687 -0.00197596056 0.0223782603 0.0101705026 -0.00859872345 0.0196402837 0.0113919396 -0.0110158585 0.0154068312 0.0140366331 -0.0115647484 -0.00588021334 0.000593186938 -0.00973731279 -0.00594423758 0.000399004755 -0.00237962604 0.00281058298 0.00464995019 0.00151918456 0.0182146952 0.0106510231 -0.000516009808 0.0219783615 0.00955632981 -0.00334846182 0.00273372279 0.00436031632 -0.0134006999 0.00467477832 -0.00927672349 -0.00140348647 0.00444558682 -0.00885954034 -0.0110976938 0.00416542822 -0.00311224908 -0.0129638296 0.00432642596 -0.00629947335 0.00024884491</float_array>
+          <technique_common>
+            <accessor source="#positions_array" count="18" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="normals">
+          <float_array id="normals_array" count="117">0.709035337 0.705060422 -0.0125959152 0.563506186 0.690357506 -0.453726053 0.377575785 0.922753155 0.0772209689 -0.435347229 0.792687237 -0.426754951 -0.401566684 0.807310224 0.432428539 -0.255702883 0.951308668 -0.172127336 -0.234330967 0.971492171 0.0359431468 0.80831629 0.552349567 -0.203800738 0.541351557 0.142814815 -0.828578591 0.253485531 0.209775552 -0.944319487 -0.230052337 0.764754832 -0.601852059 -0.651811719 0.75824523 0.0143395811 -0.645885348 0.751073718 0.136822388 -0.283010811 0.256366611 0.924219131 0.176001936 0.308269262 0.934876144 0.39759174 0.0145552242 0.917446971 0.570038199 0.252334028 0.781910479 0.961776078 0.253752202 0.102939852 -0.4857454 0.572951078 -0.66013515 -0.520338118 0.583048761 -0.623941004 0.57953912 -0.100128032 0.808769882 -0.0488236919 -0.0642548949 -0.996738434 0.498179823 -0.373340577 0.782581389 0.390868992 -0.289738864 -0.873654842 -0.0227367524 -0.229064807 -0.973145604 -0.0129869003 -0.377381921 0.92596662 0.734975934 -0.67769289 -0.0232949425 0.730697989 -0.681307733 -0.0435906239 0.733843207 -0.678707123 -0.028823033 0.510954678 -0.380254507 -0.770929158 -0.362598568 -0.188261613 -0.912732065 -0.390569746 -0.301465482 -0.869812548 -0.492006809 -0.465769529 0.735518873 -0.369867653 -0.212174773 0.904532909 -0.67391628 -0.738568783 -0.018788483 -0.675242126 -0.7372756 -0.0217419099 -0.676831365 -0.735702991 -0.0253060646 0.730035484 -0.681818485 -0.0466011465 -0.672627509 -0.739809632 -0.0159348939</float_array>
+          <technique_common>
+            <accessor source="#normals_array" count="39" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="vertices">
+          <input semantic="POSITION" source="#positions" />
+        </vertices>
+        <triangles material="scout_1a1a1a" count="32">
+          <input semantic="VERTEX" source="#vertices" offset="0" />
+          <input semantic="NORMAL" source="#normals" offset="1" />
+          <p>0 0 1 1 2 2 3 3 4 4 1 5 4 4 2 6 1 5 5 7 1 1 0 0 6 8 7 9 1 1 6 8 1 1 5 7 3 3 1 5 7 10 8 11 9 12 3 3 9 12 4 4 3 3 4 4 10 13 2 14 2 14 11 15 0 16 12 17 5 7 0 0 3 3 13 18 8 19 10 13 4 4 9 12 11 15 12 20 0 16 13 18 3 3 7 10 13 21 7 9 6 8 14 22 12 20 11 15 15 23 16 24 6 8 10 13 17 25 11 15 17 25 14 22 11 15 12 26 14 27 5 28 5 29 15 23 6 8 16 24 8 30 13 21 16 24 15 31 8 30 14 32 17 25 9 33 17 25 10 13 9 33 15 34 9 35 8 36 14 27 15 37 5 28 10 13 11 15 2 14 13 21 6 8 16 24 15 34 14 38 9 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="scene">
+      <node id="link14_R">
+        <instance_geometry url="#geometry">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="scout_1a1a1a" target="#scout_1a1a1a" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#scene" />
+  </scene>
+</COLLADA>
